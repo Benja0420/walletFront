@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transferencias</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="shortcut icon" href="../assets/images/icons/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="../assets/images/icons/Profile photo.png" alt="">
+            <p>Hola, <br>Benjamín!</p>
+        </div>
+        <a href="../pages/configuracion.html">
+            <img class="settings" src="../assets/images/icons/settings.png" alt="">
+        </a>
+    </header>
+    <main>
+        <section>
+            <h2>Transferencias</h2>
+            <form id="transferForm">
+                <label for="nombre">Nombre</label>
+                <input type="text">
+                <br>
+                <label for="rut">Rut</label>
+                <input type="text">
+                <br>
+                <button onclick="solicitarMonto()">Transferir</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <nav class="nav">
+            <ul>
+                <a href="../index.html">Inicio</a>
+                <a href="./saldo.html">Saldo</a>
+                <a href="#">Transferencias</a>
+                <a href="./historial.html">Historial</a>
+            </ul>
+        </nav>
+    </footer>
+    <script defer src="../assets/scripts/app.js"></script>
