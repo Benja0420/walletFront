@@ -36,7 +36,7 @@ header div p {
 }
 
 main {
-    min-height: 80vh;
+    min-height: 75vh;
     min-width: 320px;
     display: flex;
     flex-direction: column;
@@ -69,19 +69,29 @@ nav {
     color: white;
     text-decoration: none;
     padding: 0px 6px 0px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav ul a[href="#"] {
-    color: var(--quaternary-color);
-    background: white;
+    background: var(--primary-color);
+    position: relative;
 }
-.nav ul a[href="#"] span {
-height: 10%;
-background-color: var(--primary-color);
-}
+
 
 .nav ul li a:hover {
     color: black;
+}
+.nav ul a.active::before {
+    content: '';
+    display: block;
+    height: 8px;
+    width: 100%;
+    background-color: var(--tertiary-color);
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .container {
@@ -90,7 +100,7 @@ background-color: var(--primary-color);
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 48px;
+    padding: 7vh;
 }
 
 .recentTransfers {
