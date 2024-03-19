@@ -10,54 +10,52 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="./assets/images/icons/Profile photo.png" alt="">
-            <p>Hola, <br>Benjamín!</p>
+    <header class="header">
+        <div class="header__profile">
+            <img class="header__profile-img" src="./assets/images/icons/Profile photo.png" alt="">
+            <p class="header__profile-name">Hola, <br>Benjamín!</p>
         </div>
-        <a href="./pages/configuracion.html">
-            <img class="settings" src="./assets/images/icons/settings.png" alt="">
+        <a class="header__settings-link" href="./pages/configuracion.html">
+            <img class="header__settings-img" src="./assets/images/icons/settings.png" alt="">
         </a>
     </header>
-    <main>
-        <section class="container">
-            <div>
-                <h3>Saldo</h3>
-                <p>$ 420.000</p>
+    <main class="main">
+        <section class="main__container">
+            <div class="main__balance">
+                <h3 class="main__balance-title">Saldo</h3>
+                <p class="main__balance-amount">$ 420.000</p>
             </div>
-            <div class="buttons">
-                <button>Recargar</button>
-                <button>Transferir</button>
+            <div class="main__buttons">
+                <button class="main__button">Recargar</button>
+                <button class="main__button">Transferir</button>
             </div>
         </section>
-        <section>
-            <h2>Transferencias recientes</h2>
-            <ul class="recentTransfers">
-                <li class="recentTransfersLi"><img class="recentTransfersImg" src="./assets/images/icons/Add.png"
+        <section class="main__recent-transfers">
+            <h2 class="main__recent-transfers-title">Transferencias recientes</h2>
+            <ul class="main__recent-transfers-list">
+                <li class="main__recent-transfers-item"><img class="main__recent-transfers-img" src="./assets/images/icons/Add.png"
                         alt="">
                     Add</li>
-                <li class="recentTransfersLi"><img class="recentTransfersImg"
+                <li class="main__recent-transfers-item"><img class="main__recent-transfers-img"
                         src="./assets/images/icons/Profile photo.png" alt="">Benjamín</li>
-                <li class="recentTransfersLi"><img class="recentTransfersImg"
+                <li class="main__recent-transfers-item"><img class="main__recent-transfers-img"
                         src="./assets/images/icons/Profile photo.png" alt="">Benjamín</li>
-                <li class="recentTransfersLi"><img class="recentTransfersImg"
+                <li class="main__recent-transfers-item"><img class="main__recent-transfers-img"
                         src="./assets/images/icons/Profile photo.png" alt="">Benjamín</li>
             </ul>
         </section>
-        <section>
-            <h2>Ultimas transacciones</h2>
-            <p>Ver todas</p>
-
-
+        <section class="main__last-transactions">
+            <h2 class="main__last-transactions-title">Ultimas transacciones</h2>
+            <p class="main__last-transactions-link">Ver todas</p>
         </section>
     </main>
-    <footer>
-        <nav class="nav">
-            <ul>
-                <a href="#" class="active">Inicio</a>
-                <a href="./pages/saldo.html">Saldo</a>
-                <a href="./pages/transferencias.html">Transferencias</a>
-                <a href="./pages/historial.html">Historial</a>
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <a href="#" class="footer__nav-item footer__nav-item--active">Inicio</a>
+                <a href="./pages/saldo.html" class="footer__nav-item">Saldo</a>
+                <a href="./pages/transferencias.html" class="footer__nav-item">Transferencias</a>
+                <a href="./pages/historial.html" class="footer__nav-item">Historial</a>
             </ul>
         </nav>
     </footer>
