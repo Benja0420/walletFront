@@ -15,6 +15,13 @@ body {
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
+.button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
 .header {
     background-color: var(--primary-color);
     min-height: 10vh;
@@ -51,7 +58,17 @@ body {
     flex-direction: column;
     padding: 7vh;
 }
-
+.main__balance {
+    border: var(--tertiary-color) 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--quinary-color);
+    gap: 10px;
+}
 .main__recent-transfers-list {
     display: flex;
     justify-content: space-between;
