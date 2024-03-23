@@ -11,31 +11,42 @@
 
 <body>
     <header class="header">
-        <div class="header__profile">
-            <img class="header__profile-img" src="./assets/images/icons/Profile photo.png" alt="">
-            <p class="header__profile-name">Hola, <br>Benjamín!</p>
+        <div class="nav1">
+            <div class="nav1__profile">
+                <img class="nav1__profile-img" src="./assets/images/icons/Profile photo.png" alt="">
+                <p class="nav1__profile-name">Hola, <br>Benjamín!</p>
+            </div>
+            <a class="nav1__settings-link" href="./pages/configuracion.html">
+                <img class="nav1__settings-img" src="./assets/images/icons/settings.png" alt="">
+            </a>
         </div>
-        <a class="header__settings-link" href="./pages/configuracion.html">
-            <img class="header__settings-img" src="./assets/images/icons/settings.png" alt="">
-        </a>
+        <div class="nav2">
+            <a class="nav2__logo" href="#">Mi billetera</a>
+            <ul class="nav2__list">
+                <li><a class="nav2__item" href="#">Inicio</a></li>
+                <li><a class="nav2__item" href="./pages/saldo.html">Saldo</a></li>
+                <li><a class="nav2__item" href="./pages/transferencias.html">Transferencias</a></li>
+                <li><a class="nav2__item" href="./pages/historial.html">Historial</a></li>
+                <li><a class="nav2__item" href="./pages/configuracion.html">Configuración</a></li>
+            </ul>
+        </div>
     </header>
     <main class="main">
-        <section class="main__container">
-            <div class="main__balance">
+        <div class="main__container">
+            <section class="main__balance">
                 <h3 class="main__balance-title">Saldo</h3>
                 <p class="main__balance-amount">$420.000</p>
-            </div>
-            <div class="main__buttons">
-                <button class="button">Recargar</button>
-                <button class="button">Transferir</button>
-            </div>
-        </section>
+                <div class="main__buttons">
+                    <button class="button">Recargar</button>
+                    <button class="button">Transferir</button>
+                </div>
+            </section>
+        </div>
         <section class="main__recent-transfers">
             <h2 class="main__recent-transfers-title">Transferencias recientes</h2>
             <ul class="main__recent-transfers-list">
-                <li class="main__recent-transfers-item"><img class="main__recent-transfers-img" src="./assets/images/icons/Add.png"
-                        alt="">
-                    Add</li>
+                <li class="main__recent-transfers-item"><img class="main__recent-transfers-img"
+                        src="./assets/images/icons/Add.png" alt="">Add</li>
                 <li class="main__recent-transfers-item"><img class="main__recent-transfers-img"
                         src="./assets/images/icons/Profile photo.png" alt="">Benjamín</li>
                 <li class="main__recent-transfers-item"><img class="main__recent-transfers-img"

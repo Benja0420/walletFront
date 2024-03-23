@@ -22,7 +22,16 @@ body {
     padding: 10px 20px;
 }
 
-.header {
+.header__container {
+    background-color: var(--primary-color);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav1 {
     background-color: var(--primary-color);
     min-height: 10vh;
     padding: 4px;
@@ -30,48 +39,81 @@ body {
     justify-content: space-between;
 }
 
-.header__profile {
+.nav1__profile {
     display: flex;
 }
 
-.header__profile-name {
+.nav1__profile-name {
     margin: 10px;
 }
 
-.header__settings-img {
+.nav1__settings-img {
     height: 30px;
 }
 
+.nav2 {
+    display: none;
+}
+
 .main {
-    min-height: 75vh;
-    min-width: 320px;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
 }
 
+.main__transfer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__transfer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main__transfer-input {
+    margin-top: 10px;
+    width: 290px;
+    height: 30px;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 5px;
+    padding: 4px;
+}
 
 .main__container {
     background: var(--primary-color);
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 7vh;
 }
+
 .main__balance {
-    border: var(--tertiary-color) 2px solid;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: var(--quinary-color);
-    gap: 10px;
+    border: var(--tertiary-color) 2px solid;
+    border-radius: 15px;
+    background-color: #dabfff34;
+    width: 290px;
+    height: 150px;
 }
+
+.main__balance-title {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.main__buttons {
+    margin-top: 20px;
+}
+
 .main__recent-transfers-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
 }
 
@@ -86,12 +128,46 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.main__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.main__login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.main__login-input {
+    height: 30px;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.login__div {
+    display: flex;
+}
+
+.login__img {
+    display: none;
+}
+
 .footer {
     width: 100%;
     height: 10vh;
 }
 
 .footer__nav {
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 10vh;
     background: var(--primary-color);
@@ -139,12 +215,68 @@ body {
 }
 
 @media (min-width: 1024px) {
-    body{
+    body {
         font-family: Arial, Helvetica, sans-serif;
     }
-    .header__profile {
+
+    .nav1 {
         display: none;
     }
+
+    .nav2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--primary-color);
+        height: 10vh;
+    }
+
+    .nav2__logo {
+        margin-left: 20px;
+        text-decoration: none;
+        color: white;
+        font-size: 37px;
+    }
+
+    .nav2__list {
+        display: flex;
+        list-style: none;
+        margin-right: 20px;
+        gap: 20px;
+    }
+
+    .nav2__item {
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav2__item:hover {
+        color: var(--quinary-color);
+    }
+
+    .nav2__item[href="#"] {
+        color: var(--quaternary-color);
+    }
+
+    .main__login {
+        width: 25%;
+    }
+    .login__div {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .login__img {
+        display: block;
+        width: 75%;
+    }
+
+    .login__img-img {
+        width: 100%;
+        height: 100vh
+    }
+
+
     .footer__nav {
         display: none;
     }
