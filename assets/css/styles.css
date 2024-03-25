@@ -166,7 +166,6 @@ body {
 }
 
 .footer__nav {
-    position: absolute;
     bottom: 0;
     width: 100%;
     height: 10vh;
@@ -274,6 +273,9 @@ body {
     .login__img-img {
         width: 100%;
         height: 100vh
+    }
+    main__recent-transfers{
+        
     }
 
 
