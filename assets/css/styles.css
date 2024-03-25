@@ -110,23 +110,25 @@ body {
 .main__buttons {
     margin-top: 20px;
 }
-
-.main__recent-transfers-list {
+.recent-transfers-list {
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
 
-.main__recent-transfers-img {
+.recent-transfers-img {
     width: 64px;
     margin-right: 12px;
 }
 
-.main__recent-transfers-item {
+.recent-transfers-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.recent-texts{
+    display: none;
 }
 
 .main__login {
@@ -145,6 +147,7 @@ body {
     gap: 20px;
     margin-bottom: 20px;
 }
+
 .main__login-input {
     height: 30px;
     border: 1px solid var(--tertiary-color);
@@ -260,6 +263,7 @@ body {
     .main__login {
         width: 25%;
     }
+
     .login__div {
         justify-content: space-between;
         width: 100%;
@@ -274,12 +278,25 @@ body {
         width: 100%;
         height: 100vh
     }
-    main__recent-transfers{
-        
+
+    .view {
+        display: flex;
+        gap: 24px;
     }
-
-
+    .recent {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-left: 24px;
+    }
+    .recent-texts{
+        display: block;
+    }
+    
+    
     .footer__nav {
         display: none;
+    }
     }
 }
