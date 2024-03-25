@@ -1,2 +1,3 @@
-Corre     : correo@email.cl
+Correo    : correo@email.cl
+
 Contraseña: contraseña
