@@ -9,16 +9,20 @@ function mostrarTransferencias() {
     const historial = document.getElementById('main');
     historial.innerHTML = '';
 
-
     const tabla = document.createElement('table');
-    const encabezado = document.createElement('tr');
+    tabla.className = 'table table-striped';
+
+    const encabezado = document.createElement('thead');
+    const filaEncabezado = document.createElement('tr');
     ['Nombre', 'Rut', 'Monto', 'Fecha'].forEach(texto => {
         const th = document.createElement('th');
         th.textContent = texto;
-        encabezado.appendChild(th);
+        filaEncabezado.appendChild(th);
     });
+    encabezado.appendChild(filaEncabezado);
     tabla.appendChild(encabezado);
 
+    const cuerpoTabla = document.createElement('tbody');
 
 
     transferencias.reverse().forEach((transferencia, index) => {
@@ -28,9 +32,10 @@ function mostrarTransferencias() {
             td.textContent = texto;
             fila.appendChild(td);
         });
-        tabla.appendChild(fila);
+        cuerpoTabla.appendChild(fila);
     });
 
+    tabla.appendChild(cuerpoTabla);
     historial.appendChild(tabla);
 }
 mostrarTransferencias();
